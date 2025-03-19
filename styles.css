@@ -242,6 +242,7 @@ section {
 	.width-container .header-wrapper {
 		letter-spacing: 0.15px;
 		line-height: 22px;
+		text-align: left;
 	}
 }
 
