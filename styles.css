@@ -79,7 +79,7 @@ svg {
 	width: 105%;
     height: 39px;
     fill: currentColor;
-    display: block; /* Ensures it behaves like a block element */
+    display: block; 
     margin: 0 auto
 }
 .navigation-list {

@@ -37,7 +37,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 window.addEventListener("scroll", function () {
     let backToTop = document.getElementById("back-to-top");
     
-    if (window.scrollY > 500) {
+    if (window.scrollY > 400) {
         backToTop.style.display = "block";
     } else {
         backToTop.style.display = "none";
