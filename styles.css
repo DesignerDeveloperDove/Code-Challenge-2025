@@ -105,7 +105,12 @@ header {
 		margin-top: 1rem;
 	}
 }
-
+@media screen and (max-width: 660px) {
+.section-title {
+font-size: 24px;
+letter-spacing: 0.5px;
+}
+}
 .section-subtitle {
 	margin-block: 0;
 	font-weight: 500;
@@ -138,8 +143,8 @@ ul {
 footer {
 	padding: 20px;
 	border-radius: 0.5em;
-	background: #222;
-	color: #333;
+	background: #323848;
+	color: #fff;
 	text-align: center;
 }
 
@@ -148,7 +153,7 @@ section {
 }
 
 .width-container {
-	max-width: 1400px;
+	max-width: 1304px;
 	margin: 0 auto;
 	padding-inline: 3em;
 
@@ -174,7 +179,20 @@ section {
 		}
 	}
 }
-
+.column.column-1{
+	width: 100%;/*this was added to split up the 2 */
+}
+.content img{
+	border-radius: 24px;
+}
+@media screen and (max-width: 660px) {
+	
+	.content img{
+		max-width: 365px;
+		height: 365px;
+		object-fit: cover;
+	}
+}
 .header-wrapper{
 	text-align: center;
 	display: grid;
@@ -191,6 +209,36 @@ section {
 	max-width: 500px;
 	margin: 0 auto;
 }
+#contact-form input{ 
+width: 500px;
+height: 28px;/*this is not the correct size in corelation to the figma input , however on my my side this resembles the file visually more than the 48px does */
+border: solid 1px #323848 ; /*the exact color px from the figma file*/
+padding: 12px 20px;
+border-radius: 50px;
+background-color: #3238480D;
+}
+
+@media screen and (max-width: 660px) {
+	#contact-form {
+	width: 100%;
+	max-width: 365px;	
+	}
+	#contact-form input{
+		width: 100%;
+		box-sizing: border-box;
+		height: 48px;
+	}
+	
+}
+
+#contact-form input::placeholder{
+color: #323848;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.5px;
+}
+
 
 #contact-form button{ 
 width: 20%;
@@ -209,18 +257,26 @@ color: #fff;
 border: none;
 width: 20%;
 }
-#contact-form input{ 
-width: 500px;
-height: 28px;/*this is not the correct size in corelation to the figma input , however on my my side this resembles the file visually more than he 48px does */
-border: solid 1px #323848 ; /*the exact color px from the figma file*/
-padding: 12px 20px;
-border-radius: 50px;
-background-color: #3238480D;
+@media screen and (max-width: 660px) {
+	
+	#contact-form button{
+		width: 103px;
+		box-sizing: border-box;
+		height: 48px;
+		text-align: start;
+		justify-self: start;
+		gap: 10px;
+	}
+	#contact-form button:hover{ 
+		background-color: #f79233;
+		color: #fff;
+		border: none;
+		width: 103px;
+		}
 }
-#contact-form input::placeholder{
-color: #323848;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.5px;
-}
+
+
+
+
+
+
