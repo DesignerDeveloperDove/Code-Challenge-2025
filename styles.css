@@ -7,7 +7,10 @@
 	--white-hex: #fff;
 	--white-rgb: 255, 255, 255;
 }
-
+/*the label could be important for database connection later on, so i wont delete it but it is not needed in this moment */
+label{
+	display: none;
+}
 body {
 	background: var(--white-hex);
 	color: var(--dark-gray-hex);
