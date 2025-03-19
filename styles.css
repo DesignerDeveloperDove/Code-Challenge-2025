@@ -75,7 +75,11 @@ svg {
 		}
 	}
 }
-
+path #Xsign{
+	width: 30px;
+	height: 39px;
+	fill: currentColor;
+}
 .navigation-list {
 	display: flex;
 	gap: 1em;
@@ -193,6 +197,9 @@ footer {
 	background: #323848;
 	color: #fff;
 	text-align: center;
+}
+#back-to-top{
+	display:  none;
 }
 
 section {
