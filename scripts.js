@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	menuBtn.addEventListener('click', toggleMenu);
 });
 
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-	event.preventDefault();
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+	e.preventDefault();// i changed it to "e" becasue thats what im used to but "event" works fine.
 	alert('Form submitted!');
 });
 
