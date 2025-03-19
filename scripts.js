@@ -44,7 +44,4 @@ window.addEventListener("scroll", function () {
     }
 });
 
-document.getElementById("back-to-top").addEventListener("click", function (e) {
-    e.preventDefault(); // this kinda just prevents default anchor behavior
-    window.scrollTo({ top: 0, behavior: "smooth" }); // built in JS peremter fo animation , this just scrolls back up to the top 
-});
+
