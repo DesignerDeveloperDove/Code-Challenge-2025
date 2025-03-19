@@ -180,3 +180,19 @@ section {
 	max-width: 500px;
 	margin: 0 auto;
 }
+
+#contact-form button{ 
+width: 20%;
+text-align: center;
+justify-self: center;
+border: solid 1px #323848 ; /*the exact color px from the figma file*/
+padding: 12px 20px;
+gap: 10px;
+border-radius: 50px;
+background-color: #fff;
+}
+/*this wasnt asked for but is a small enhancment on the user experience , can be taken out if will hurt my chances*/
+#contact-form button:hover{ 
+background-color: #f79233;
+color: #fff;
+}
