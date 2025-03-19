@@ -27,7 +27,20 @@ header {
 
 .menu-btn {
 	order: 1;
+	width: 68px;
+	height: 68px;
+	border-radius: 50px;
+	border: none;
+	background-color: #ffffff;
 }
+svg{
+	width:30px;
+	height:25.5px;
+	color: #323848;
+	fill: currentColor;
+	
+}
+	
 
 .navigation {
 	flex-grow: 1;
@@ -115,6 +128,7 @@ letter-spacing: 0.5px;
 	margin-block: 0;
 	font-weight: 500;
 	font-size: 1.25em;
+	
 
 	& + .section-title {
 		margin-top: 0.5rem;
@@ -161,12 +175,25 @@ section {
 
 	@media screen and (max-width: 1000px) {
 		padding-inline: 2em;
+		
 	}
 
 	@media screen and (max-width: 700px) {
 		padding-inline: 1em;
+		text-align: left;
 	}
 }
+
+
+@media screen and (max-width: 660px) {
+	
+.width-container .header-wrapper {
+		text-align: left;
+		letter-spacing: 0.15px;
+		line-height: 22px;
+	}
+	}
+
 .content {
 	.width-container {
 		display: grid;

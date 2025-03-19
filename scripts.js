@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-	menu.addEventListener('click', toggleMenu);
+	menuBtn.addEventListener('click', toggleMenu);
 });
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
