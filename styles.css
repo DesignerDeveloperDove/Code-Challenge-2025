@@ -100,6 +100,7 @@ header {
 	font-weight: 700;
 	font-size: 3.75em;
 
+
 	& + .content-container {
 		margin-top: 1rem;
 	}
@@ -151,6 +152,8 @@ section {
 	margin: 0 auto;
 	padding-inline: 3em;
 
+
+
 	@media screen and (max-width: 1000px) {
 		padding-inline: 2em;
 	}
@@ -159,7 +162,6 @@ section {
 		padding-inline: 1em;
 	}
 }
-
 .content {
 	.width-container {
 		display: grid;
@@ -173,6 +175,15 @@ section {
 	}
 }
 
+.header-wrapper{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1em;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 56px;
+}
 #contact-form {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -195,4 +206,21 @@ background-color: #fff;
 #contact-form button:hover{ 
 background-color: #f79233;
 color: #fff;
+border: none;
+width: 20%;
+}
+#contact-form input{ 
+width: 500px;
+height: 28px;/*this is not the correct size in corelation to the figma input , however on my my side this resembles the file visually more than he 48px does */
+border: solid 1px #323848 ; /*the exact color px from the figma file*/
+padding: 12px 20px;
+border-radius: 50px;
+background-color: #3238480D;
+}
+#contact-form input::placeholder{
+color: #323848;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.5px;
 }
