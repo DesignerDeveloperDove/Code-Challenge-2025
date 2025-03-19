@@ -34,16 +34,17 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 });
 
 //Back to top
-window.onscroll = function () {
-	if (window.scrollY > 500) {
-		document.getElementById('back-to-top').style.display = "block";
-		
-	}else{
-		document.getElementById('back-to-top').style.display = "none";
+window.addEventListener("scroll", function () {
+    let backToTop = document.getElementById("back-to-top");
+    
+    if (window.scrollY > 500) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
 
-	}
-};
-
-document.getElementById('back-to-top').addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+document.getElementById("back-to-top").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevents default anchor behavior
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
