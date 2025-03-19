@@ -1,3 +1,4 @@
+/*I keep spacig and notes in my code for readablity purposes & to make sure i can always come back when needed*/
 :root {
 	--dark-gray-hex: #323848;
 	--dark-gray-rgb: 50, 56, 72;
@@ -32,7 +33,6 @@ header {
 	border-radius: 50px;
 	border: none;
 	background-color: #ffffff;
-	
 }
 
 svg {
@@ -90,7 +90,6 @@ svg {
 
 	@media screen and (max-width: 950px) {
 		display: block;
-		text-align: center;
 	}
 }
 
@@ -185,7 +184,6 @@ img {
 	font-weight: 700;
 	text-decoration: none;
 	color: #ffffff;
-	gap: 34px;
 
 	@media screen and (max-width: 700px) {
 		line-height: 76px;
@@ -248,7 +246,6 @@ section {
 
 @media screen and (max-width: 700px) {
 	.width-container .header-wrapper {
-		text-align: left;
 		letter-spacing: 0.15px;
 		line-height: 22px;
 	}
@@ -287,7 +284,6 @@ section {
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 1em;
 	max-width: 600px;
 	margin: 0 auto;
 	margin-bottom: 56px;
@@ -337,7 +333,6 @@ section {
 	justify-self: center;
 	border: solid 1px #323848;
 	padding: 12px 20px;
-	gap: 10px;
 	border-radius: 50px;
 	background-color: #fff;
 }
@@ -357,7 +352,6 @@ section {
 		height: 48px;
 		text-align: start;
 		justify-self: start;
-		gap: 10px;
 	}
 
 	#contact-form button:hover {
